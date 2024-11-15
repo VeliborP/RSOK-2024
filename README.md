@@ -17,8 +17,8 @@ Spisak i opis svih komandi:
 https://www.learnentityframeworkcore.com/migrations/commands/pmc-commands
 
 - Reverse enginering (generisanje modela i Database Context-a na osnovu baze podataka):
-<code>
-Scaffold-DbContext 'Server=.\SQLExpress;Database=WebShop;Trusted_Connection=True;TrustServerCertificate=True' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models</code>
+
+<code>Scaffold-DbContext 'Server=.\SQLExpress;Database=WebShop;Trusted_Connection=True;TrustServerCertificate=True' Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models</code>
 
 [-force] - parametar u slučaju da želimo ponovo generisati i prepisati postojeće fajlove
 
