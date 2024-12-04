@@ -23,9 +23,9 @@ namespace WebShop.Controllers
 
         public IActionResult Privacy()
         {
-            var kategorija2 = _db.Kategorijas.Single(k => k.Id == 1);
-            _db.Kategorijas.Remove(kategorija2);
-            _db.SaveChanges();
+            //var kategorija2 = _db.Kategorijas.Single(k => k.Id == 1);
+            //_db.Kategorijas.Remove(kategorija2);
+            //_db.SaveChanges();
 
             //var kategorija2 = _db.Kategorijas.Single(k => k.Id == 2);
             //kategorija2.Naziv = "Periferije1";

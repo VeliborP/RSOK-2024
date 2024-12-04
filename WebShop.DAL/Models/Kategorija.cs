@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace WebShop.DAL.Models;
+﻿namespace WebShop.DAL.Models;
 
 public partial class Kategorija
 {
