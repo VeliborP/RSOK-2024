@@ -1,4 +1,4 @@
-﻿@model WebShop.DAL.Models.Kategorija
+﻿@model WebShop.ViewModels.KategorijaViewModel
 
 @{
     ViewData["Title"] = "Delete";
@@ -16,6 +16,9 @@
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Naziv)
+        </dd>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Opis)
         </dd>
     </dl>
     

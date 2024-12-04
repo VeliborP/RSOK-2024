@@ -17,9 +17,11 @@ public partial class WebShopContext : DbContext
     }
 
     public virtual DbSet<Kategorija> Kategorijas { get; set; }
+    public virtual DbSet<Proizvod> Proizovds { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new KategorijaMap());
+        modelBuilder.ApplyConfiguration(new ProizvodMap());
     }
 }

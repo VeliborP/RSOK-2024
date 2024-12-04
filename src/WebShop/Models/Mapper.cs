@@ -10,7 +10,8 @@ namespace WebShop.Models
             return new Kategorija
             {
                 Id = kategorijaViewModel.Id,
-                Naziv = $"{kategorijaViewModel.Prefiks}-{kategorijaViewModel.Naziv}"
+                Naziv = kategorijaViewModel.Naziv,
+                Opis = kategorijaViewModel.Opis
             };
         }
 
@@ -20,7 +21,7 @@ namespace WebShop.Models
             {
                 Id = kategorijaViewModel.Id,
                 Naziv = kategorijaViewModel.Naziv,
-                Prefiks = kategorijaViewModel.Naziv.Split("-")[0].ToString()
+                Opis = kategorijaViewModel.Opis
             };
         }
     }

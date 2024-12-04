@@ -23,10 +23,11 @@ namespace WebShop.Controllers
             foreach(var kategorija in kategorijeDb)
             {
                 kategorijeViewModel.Add(
-                    new KategorijaViewModel()
+                    new KategorijaViewModel
                     {
                         Id = kategorija.Id,
-                        Naziv = kategorija.Naziv
+                        Naziv = kategorija.Naziv,
+                        Opis = kategorija.Opis
                     });
             }
 
@@ -47,7 +48,7 @@ namespace WebShop.Controllers
                 return NotFound();
             }
 
-            return View(kategorija);
+            return View(Mapper.MapKategorijaToKategorijaViewModel(kategorija));
         }
 
         public IActionResult Create()
@@ -85,7 +86,7 @@ namespace WebShop.Controllers
             {
                 return NotFound();
             }
-            return View(kategorija);
+            return View(Mapper.MapKategorijaToKategorijaViewModel(kategorija));
         }
 
         [HttpPost]
@@ -121,7 +122,6 @@ namespace WebShop.Controllers
             return View(kategorija);
         }
 
-        // GET: Kategorija/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -136,10 +136,9 @@ namespace WebShop.Controllers
                 return NotFound();
             }
 
-            return View(kategorija);
+            return View(Mapper.MapKategorijaToKategorijaViewModel(kategorija));
         }
 
-        // POST: Kategorija/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

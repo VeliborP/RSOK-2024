@@ -1,6 +1,4 @@
-﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System.ComponentModel.DataAnnotations;
-using WebShop.DAL.Models;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace WebShop.ViewModels
 {
@@ -10,9 +8,10 @@ namespace WebShop.ViewModels
 
         [Required(ErrorMessage = "Naziv je obavezno polje")]
         [MaxLength(50, ErrorMessage = "Maksimalna duzina naziva je 50 karaktera")]
-        public string Naziv { get; set; }
+        public required string Naziv { get; set; }
 
-        public string Prefiks { get; set; }
+        [MaxLength(500, ErrorMessage = "Maksimalna duzina opisa je 500 karaktera")]
+        public string? Opis { get; set; }
 
         
     }
