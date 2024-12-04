@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShop", "WebShop.csproj", "{2AE26E26-528D-41A7-98AE-4B87B6E953A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShop", "WebShop\WebShop.csproj", "{2AE26E26-528D-41A7-98AE-4B87B6E953A7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShop.DAL", "..\WebShop.DAL\WebShop.DAL.csproj", "{5F78DD6F-A0B0-40C3-9078-974D9A057098}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShop.DAL", "WebShop.DAL\WebShop.DAL.csproj", "{5F78DD6F-A0B0-40C3-9078-974D9A057098}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
