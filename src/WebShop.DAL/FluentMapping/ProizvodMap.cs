@@ -19,6 +19,13 @@ namespace WebShop.DAL.FluentMapping
             entity.Property(e => e.Opis)
                   .HasMaxLength(500)
                   .IsRequired(false);
+            entity.Property(e => e.KategorijaId)
+                .IsRequired(false);
+
+            entity.HasOne(e => e.Kategorija)
+                .WithMany(p => p.Proizvodi)
+                .HasForeignKey(d => d.KategorijaId)
+                .HasConstraintName("FK_Proizvod_Kategorija");
         }
     }
 }

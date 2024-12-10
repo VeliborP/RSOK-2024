@@ -7,4 +7,6 @@ public partial class Kategorija
     public string Naziv { get; set; } = null!;
 
     public string? Opis { get; set; }
+
+    public ICollection<Proizvod> Proizvodi { get; set; }
 }

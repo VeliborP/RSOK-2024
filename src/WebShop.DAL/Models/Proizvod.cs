@@ -7,5 +7,7 @@
         public required string Sifra { get; set; }
         public string? KratakOpis { get; set; }
         public string? Opis { get; set; }
+        public int? KategorijaId { get; set; }
+        public virtual Kategorija Kategorija { get; set; }
     }
 }
